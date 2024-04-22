@@ -1,0 +1,23 @@
+[32m2024-04-22 22:37:19.726[0m | [1mINFO    [0m | [36mdatatrove.utils.logging[0m:[36madd_task_logger[0m:[36m47[0m - [1mLaunching pipeline for rank=3[0m
+[32m2024-04-22 22:37:19.730[0m | [1mINFO    [0m | [36mdatatrove.utils.logging[0m:[36mlog_pipeline[0m:[36m76[0m - [1m
+--- 🛠️ PIPELINE 🛠
+📖 - READER: 📒 Parquet
+🔻 - FILTER: 👤 Lambda
+💽 - WRITER: 🐿 Jsonl[0m
+[32m2024-04-22 22:37:35.015[0m | [1mINFO    [0m | [36mdatatrove.pipeline.readers.base[0m:[36mread_files_shard[0m:[36m193[0m - [1mReading input file CC-MAIN-2013-20/000_00003.parquet[0m
+[32m2024-04-22 22:37:49.688[0m | [32m[1mSUCCESS [0m | [36mdatatrove.executor.base[0m:[36m_run_for_rank[0m:[36m85[0m - [32m[1mProcessing done for rank=3[0m
+[32m2024-04-22 22:37:49.695[0m | [1mINFO    [0m | [36mdatatrove.executor.base[0m:[36m_run_for_rank[0m:[36m91[0m - [1m
+
+📉📉📉 Stats: Task 3 📉📉📉
+
+Total Runtime: 0 seconds
+
+📖 - READER: 📒 Parquet
+    Runtime: (54.14%) 0 seconds [50.56 milliseconds±8.95 milliseconds/batch]
+    Stats: {input_files: 1, doc_len: 3294716 [min=224, max=59096, 3294.72±5782/doc], doc_len_tokens: 756634 [min=59, max=14517, 756.63±1331/doc], documents: 1000 [1000.00/input_file]}
+🔻 - FILTER: 👤 Lambda
+    Runtime: (34.37%) 0 seconds [0.06 milliseconds±0.12 milliseconds/doc]
+    Stats: {total: 1000, dropped: 981, forwarded: 19, doc_len: 254248 [min=456, max=56094, 13381.47±16723/doc], doc_len_tokens: 59195 [min=110, max=14517, 3115.53±3949/doc]}
+💽 - WRITER: 🐿 Jsonl
+    Runtime: (11.49%) 0 seconds [1.13 milliseconds±1.91 milliseconds/doc]
+    Stats: {XXXXX.jsonl.gz: 19, total: 19, doc_len: 254248 [min=456, max=56094, 13381.47±16723/doc], doc_len_tokens: 59195 [min=110, max=14517, 3115.53±3949/doc]}[0m

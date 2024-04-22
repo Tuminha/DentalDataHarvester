@@ -1,0 +1,125 @@
+[
+    {
+        "name": "\ud83d\udcd6 - READER: \ud83d\udcd2 Parquet",
+        "time_stats": {
+            "total": 0.04402083301101811,
+            "n": 2,
+            "mean": 0.022010416505509056,
+            "variance": 0.0003284847686236017,
+            "std_dev": 0.018124148769627823,
+            "min": 0.009194708007271402,
+            "max": 0.03482612500374671,
+            "unit": "batch",
+            "total_human": "0 seconds",
+            "mean_human": "22.01 milliseconds",
+            "std_dev_human": "18.12 milliseconds",
+            "min_human": "9.20 milliseconds",
+            "max_human": "34.83 milliseconds"
+        },
+        "stats": {
+            "input_files": 1,
+            "doc_len": {
+                "total": 3248800,
+                "n": 1000,
+                "mean": 3248.8000000000006,
+                "variance": 35824599.49349354,
+                "std_dev": 5985.365443604387,
+                "min": 223,
+                "max": 108337
+            },
+            "doc_len_tokens": {
+                "total": 746227,
+                "n": 1000,
+                "mean": 746.2270000000003,
+                "variance": 1881010.9544254264,
+                "std_dev": 1371.4995276796221,
+                "min": 57,
+                "max": 23577
+            },
+            "documents": {
+                "total": 1000,
+                "mean": 1000.0,
+                "unit": "input_file"
+            }
+        }
+    },
+    {
+        "name": "\ud83d\udd3b - FILTER: \ud83d\udc64 Lambda",
+        "time_stats": {
+            "total": 0.06794291621190496,
+            "n": 1000,
+            "mean": 6.794291621190498e-05,
+            "variance": 2.576996076588334e-08,
+            "std_dev": 0.00016053024875668553,
+            "min": 3.5829871194437146e-06,
+            "max": 0.003408165997825563,
+            "total_human": "0 seconds",
+            "mean_human": "0.07 milliseconds",
+            "std_dev_human": "0.16 milliseconds",
+            "min_human": "0.00 milliseconds",
+            "max_human": "3.41 milliseconds"
+        },
+        "stats": {
+            "total": 1000,
+            "dropped": 984,
+            "forwarded": 16,
+            "doc_len": {
+                "total": 115742,
+                "n": 16,
+                "mean": 7233.875,
+                "variance": 116336585.31666666,
+                "std_dev": 10785.94387694775,
+                "min": 1111,
+                "max": 45729
+            },
+            "doc_len_tokens": {
+                "total": 28912,
+                "n": 16,
+                "mean": 1807.0,
+                "variance": 9850801.6,
+                "std_dev": 3138.5986681957284,
+                "min": 217,
+                "max": 13213
+            }
+        }
+    },
+    {
+        "name": "\ud83d\udcbd - WRITER: \ud83d\udc3f Jsonl",
+        "time_stats": {
+            "total": 0.009308707041782327,
+            "n": 16,
+            "mean": 0.0005817941901113955,
+            "variance": 1.0844923756149933e-06,
+            "std_dev": 0.001041389636790665,
+            "min": 2.562499139457941e-05,
+            "max": 0.003550334004103206,
+            "total_human": "0 seconds",
+            "mean_human": "0.58 milliseconds",
+            "std_dev_human": "1.04 milliseconds",
+            "min_human": "0.03 milliseconds",
+            "max_human": "3.55 milliseconds"
+        },
+        "stats": {
+            "XXXXX.jsonl.gz": 16,
+            "total": 16,
+            "doc_len": {
+                "total": 115742,
+                "n": 16,
+                "mean": 7233.875,
+                "variance": 116336585.31666666,
+                "std_dev": 10785.94387694775,
+                "min": 1111,
+                "max": 45729
+            },
+            "doc_len_tokens": {
+                "total": 28912,
+                "n": 16,
+                "mean": 1807.0,
+                "variance": 9850801.6,
+                "std_dev": 3138.5986681957284,
+                "min": 217,
+                "max": 13213
+            }
+        }
+    }
+]

@@ -1,0 +1,125 @@
+[
+    {
+        "name": "\ud83d\udcd6 - READER: \ud83d\udcd2 Parquet",
+        "time_stats": {
+            "total": 0.020525583997368813,
+            "n": 2,
+            "mean": 0.010262791998684406,
+            "variance": 1.8667950615291955e-06,
+            "std_dev": 0.0013663070890283764,
+            "min": 0.00929666699084919,
+            "max": 0.011228917006519623,
+            "unit": "batch",
+            "total_human": "0 seconds",
+            "mean_human": "10.26 milliseconds",
+            "std_dev_human": "1.37 milliseconds",
+            "min_human": "9.30 milliseconds",
+            "max_human": "11.23 milliseconds"
+        },
+        "stats": {
+            "input_files": 1,
+            "doc_len": {
+                "total": 2878388,
+                "n": 1000,
+                "mean": 2878.388000000005,
+                "variance": 21898583.472928897,
+                "std_dev": 4679.592233617038,
+                "min": 211,
+                "max": 86214
+            },
+            "doc_len_tokens": {
+                "total": 654022,
+                "n": 1000,
+                "mean": 654.022,
+                "variance": 1083474.2517677683,
+                "std_dev": 1040.9006925580213,
+                "min": 56,
+                "max": 18912
+            },
+            "documents": {
+                "total": 1000,
+                "mean": 1000.0,
+                "unit": "input_file"
+            }
+        }
+    },
+    {
+        "name": "\ud83d\udd3b - FILTER: \ud83d\udc64 Lambda",
+        "time_stats": {
+            "total": 0.08953089821443427,
+            "n": 1000,
+            "mean": 8.953089821443425e-05,
+            "variance": 1.7729140109790334e-08,
+            "std_dev": 0.00013315081715780167,
+            "min": 6.000002031214535e-06,
+            "max": 0.0020983750000596046,
+            "total_human": "0 seconds",
+            "mean_human": "0.09 milliseconds",
+            "std_dev_human": "0.13 milliseconds",
+            "min_human": "0.01 milliseconds",
+            "max_human": "2.10 milliseconds"
+        },
+        "stats": {
+            "total": 1000,
+            "dropped": 943,
+            "forwarded": 57,
+            "doc_len": {
+                "total": 421755,
+                "n": 57,
+                "mean": 7399.210526315789,
+                "variance": 135077227.66917294,
+                "std_dev": 11622.272913211638,
+                "min": 614,
+                "max": 86214
+            },
+            "doc_len_tokens": {
+                "total": 93756,
+                "n": 57,
+                "mean": 1644.8421052631581,
+                "variance": 6501203.84962406,
+                "std_dev": 2549.7458402013444,
+                "min": 138,
+                "max": 18912
+            }
+        }
+    },
+    {
+        "name": "\ud83d\udcbd - WRITER: \ud83d\udc3f Jsonl",
+        "time_stats": {
+            "total": 0.029057167950668372,
+            "n": 57,
+            "mean": 0.0005097748763275155,
+            "variance": 9.516753764253669e-07,
+            "std_dev": 0.0009755385058650257,
+            "min": 2.3333996068686247e-05,
+            "max": 0.006247874989639968,
+            "total_human": "0 seconds",
+            "mean_human": "0.51 milliseconds",
+            "std_dev_human": "0.98 milliseconds",
+            "min_human": "0.02 milliseconds",
+            "max_human": "6.25 milliseconds"
+        },
+        "stats": {
+            "XXXXX.jsonl.gz": 57,
+            "total": 57,
+            "doc_len": {
+                "total": 421755,
+                "n": 57,
+                "mean": 7399.210526315789,
+                "variance": 135077227.66917294,
+                "std_dev": 11622.272913211638,
+                "min": 614,
+                "max": 86214
+            },
+            "doc_len_tokens": {
+                "total": 93756,
+                "n": 57,
+                "mean": 1644.8421052631581,
+                "variance": 6501203.84962406,
+                "std_dev": 2549.7458402013444,
+                "min": 138,
+                "max": 18912
+            }
+        }
+    }
+]

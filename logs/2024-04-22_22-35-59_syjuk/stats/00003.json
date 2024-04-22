@@ -1,0 +1,72 @@
+[
+    {
+        "name": "\ud83d\udcd6 - READER: \ud83d\udcd2 Parquet",
+        "time_stats": {
+            "total": 0.037886207981500775,
+            "n": 2,
+            "mean": 0.018943103990750387,
+            "variance": 1.2492711013207598e-05,
+            "std_dev": 0.0035345029372186973,
+            "min": 0.016443832995719276,
+            "max": 0.021442374985781498,
+            "unit": "batch",
+            "total_human": "0 seconds",
+            "mean_human": "18.94 milliseconds",
+            "std_dev_human": "3.54 milliseconds",
+            "min_human": "16.44 milliseconds",
+            "max_human": "21.44 milliseconds"
+        },
+        "stats": {
+            "input_files": 1,
+            "doc_len": {
+                "total": 3294716,
+                "n": 1000,
+                "mean": 3294.7160000000026,
+                "variance": 33427509.226570558,
+                "std_dev": 5781.652810967687,
+                "min": 224,
+                "max": 59096
+            },
+            "doc_len_tokens": {
+                "total": 756634,
+                "n": 1000,
+                "mean": 756.6340000000002,
+                "variance": 1771034.8108548545,
+                "std_dev": 1330.8023184736546,
+                "min": 59,
+                "max": 14517
+            },
+            "documents": {
+                "total": 1000,
+                "mean": 1000.0,
+                "unit": "input_file"
+            }
+        }
+    },
+    {
+        "name": "\ud83d\udd3b - FILTER: \ud83d\udc64 Lambda",
+        "time_stats": {
+            "total": 0.059946619541733526,
+            "n": 1000,
+            "mean": 5.994661954173345e-05,
+            "variance": 1.2044676806715174e-08,
+            "std_dev": 0.00010974824284112787,
+            "min": 5.875001079402864e-06,
+            "max": 0.001560083997901529,
+            "total_human": "0 seconds",
+            "mean_human": "0.06 milliseconds",
+            "std_dev_human": "0.11 milliseconds",
+            "min_human": "0.01 milliseconds",
+            "max_human": "1.56 milliseconds"
+        },
+        "stats": {
+            "total": 1000,
+            "dropped": 1000
+        }
+    },
+    {
+        "name": "\ud83d\udcbd - WRITER: \ud83d\udc3f Jsonl",
+        "time_stats": 0,
+        "stats": {}
+    }
+]

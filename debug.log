@@ -3,3 +3,18 @@ DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projec
 DEBUG:asyncio:Using selector: KqueueSelector
 DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_18-47-40_ikgfw/executor.json
 DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_18-47-40_ikgfw/stats.json
+DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_19-40-44_lsmtu/executor.json
+DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_19-40-44_lsmtu/stats.json
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_22-16-00_mltkd/executor.json
+DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_22-16-00_mltkd/stats.json
+DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_22-24-00_jospb/executor.json
+DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_22-24-00_jospb/stats.json
+DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_22-32-03_vkrdq/executor.json
+DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_22-32-03_vkrdq/stats.json
+DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_22-33-26_qmbnv/executor.json
+DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_22-33-26_qmbnv/stats.json
+DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_22-35-59_syjuk/executor.json
+DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_22-35-59_syjuk/stats.json
+DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_22-37-18_gxtcm/executor.json
+DEBUG:fsspec.local:open file: /Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_22-37-18_gxtcm/stats.json
