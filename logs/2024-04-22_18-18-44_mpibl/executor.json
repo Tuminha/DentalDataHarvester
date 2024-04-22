@@ -1,0 +1,43 @@
+{
+    "pipeline": [
+        {
+            "limit": 1000,
+            "progress": false,
+            "text_key": "text",
+            "id_key": "id",
+            "adapter": "<bound method BaseReader._default_adapter of \ud83d\udcd6 - READER: \ud83d\udcd2 Parquet>",
+            "_empty_warning": false,
+            "default_metadata": null,
+            "data_folder": "DataFolder(path='datasets/HuggingFaceFW/fineweb/data', fs=<huggingface_hub.hf_file_system.HfFileSystem object at 0x104c29d50>)",
+            "recursive": true,
+            "glob_pattern": null,
+            "shuffle_files": false,
+            "batch_size": 1000,
+            "read_metadata": true
+        },
+        {
+            "exclusion_writer": null,
+            "filter_function": "<function is_dentistry_related at 0x1137f2ac0>"
+        },
+        {
+            "compression": "gzip",
+            "output_folder": "DataFolder(path='/Volumes/LaCie/Dentistry_database', fs=<fsspec.implementations.local.LocalFileSystem object at 0x1136aa390>)",
+            "max_file_size": -1,
+            "file_id_counter": {},
+            "output_filename": "<string.Template object at 0x112d2fa90>",
+            "output_mg": "<datatrove.io.OutputFileManager object at 0x11353f510>",
+            "adapter": "<bound method DiskWriter._default_adapter of \ud83d\udcbd - WRITER: \ud83d\udc3f Jsonl>",
+            "expand_metadata": false
+        }
+    ],
+    "logging_dir": "DataFolder(path='/Users/franciscoteixeirabarbosa/Dropbox/LLM Projects/Dentistry Dataset/logs/2024-04-22_18-18-44_mpibl', fs=<fsspec.implementations.local.LocalFileSystem object at 0x1136aa390>)",
+    "skip_completed": true,
+    "tasks": 10,
+    "workers": 10,
+    "start_method": "forkserver",
+    "local_tasks": 10,
+    "local_rank_offset": 0,
+    "depends": null,
+    "_launched": true,
+    "world_size": 10
+}

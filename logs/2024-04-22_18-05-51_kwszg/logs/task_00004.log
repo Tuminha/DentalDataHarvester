@@ -1,0 +1,72 @@
+[32m2024-04-22 18:05:52.533[0m | [1mINFO    [0m | [36mdatatrove.utils.logging[0m:[36madd_task_logger[0m:[36m47[0m - [1mLaunching pipeline for rank=4[0m
+[32m2024-04-22 18:05:52.534[0m | [1mINFO    [0m | [36mdatatrove.utils.logging[0m:[36mlog_pipeline[0m:[36m76[0m - [1m
+--- 🛠️ PIPELINE 🛠
+📖 - READER: 📒 Parquet
+🔻 - FILTER: 👤 Lambda
+💽 - WRITER: 🐿 Jsonl[0m
+[32m2024-04-22 18:06:06.726[0m | [1mINFO    [0m | [36mdatatrove.pipeline.readers.base[0m:[36mread_files_shard[0m:[36m193[0m - [1mReading input file CC-MAIN-2013-20/000_00004.parquet[0m
+[32m2024-04-22 18:06:13.167[0m | [31m[1mERROR   [0m | [36mdatatrove.executor.base[0m:[36m_run_for_rank[0m:[36m95[0m - [31m[1mname 'dentistry_keywords' is not defined[0m
+[33m[1mTraceback (most recent call last):[0m
+
+  File "<string>", line 1, in <module>
+  File "/Users/franciscoteixeirabarbosa/anaconda3/envs/streamlitapp/lib/python3.11/site-packages/multiprocess/forkserver.py", line 273, in main
+    code = _serve_one(child_r, fds,
+           │          │        └ [11, 12, 13, 14, 15, 16]
+           │          └ 8
+           └ <function _serve_one at 0x103de8ae0>
+  File "/Users/franciscoteixeirabarbosa/anaconda3/envs/streamlitapp/lib/python3.11/site-packages/multiprocess/forkserver.py", line 312, in _serve_one
+    code = spawn._main(child_r, parent_sentinel)
+           │     │     │        └ 4
+           │     │     └ 8
+           │     └ <function _main at 0x103de7d80>
+           └ <module 'multiprocess.spawn' from '/Users/franciscoteixeirabarbosa/anaconda3/envs/streamlitapp/lib/python3.11/site-packages/m...
+  File "/Users/franciscoteixeirabarbosa/anaconda3/envs/streamlitapp/lib/python3.11/site-packages/multiprocess/spawn.py", line 133, in _main
+    return self._bootstrap(parent_sentinel)
+           │    │          └ 4
+           │    └ <function BaseProcess._bootstrap at 0x1036a3b00>
+           └ <ForkServerProcess name='ForkServerPoolWorker-14' parent=96205 started daemon>
+  File "/Users/franciscoteixeirabarbosa/anaconda3/envs/streamlitapp/lib/python3.11/site-packages/multiprocess/process.py", line 314, in _bootstrap
+    self.run()
+    │    └ <function BaseProcess.run at 0x1036a3060>
+    └ <ForkServerProcess name='ForkServerPoolWorker-14' parent=96205 started daemon>
+  File "/Users/franciscoteixeirabarbosa/anaconda3/envs/streamlitapp/lib/python3.11/site-packages/multiprocess/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <ForkServerProcess name='ForkServerPoolWorker-14' parent=96205 started daemon>
+    │    │        │    └ (<multiprocess.queues.SimpleQueue object at 0x103dee210>, <multiprocess.queues.SimpleQueue object at 0x103e140d0>, None, (), ...
+    │    │        └ <ForkServerProcess name='ForkServerPoolWorker-14' parent=96205 started daemon>
+    │    └ <function worker at 0x103deb880>
+    └ <ForkServerProcess name='ForkServerPoolWorker-14' parent=96205 started daemon>
+  File "/Users/franciscoteixeirabarbosa/anaconda3/envs/streamlitapp/lib/python3.11/site-packages/multiprocess/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    │     │       └ {}
+                    │     └ (4,)
+                    └ functools.partial(<bound method LocalPipelineExecutor._launch_run_for_rank of <datatrove.executor.local.LocalPipelineExecutor...
+  File "/Users/franciscoteixeirabarbosa/anaconda3/envs/streamlitapp/lib/python3.11/site-packages/datatrove/executor/local.py", line 74, in _launch_run_for_rank
+    return self._run_for_rank(rank, local_rank)
+           │    │             │     └ 0
+           │    │             └ 4
+           │    └ <function PipelineExecutor._run_for_rank at 0x1205858a0>
+           └ <datatrove.executor.local.LocalPipelineExecutor object at 0x103e0f250>
+> File "/Users/franciscoteixeirabarbosa/anaconda3/envs/streamlitapp/lib/python3.11/site-packages/datatrove/executor/base.py", line 83, in _run_for_rank
+    deque(pipelined_data, maxlen=0)
+    │     └ <generator object DiskWriter.run at 0x1061ecbf0>
+    └ <class 'collections.deque'>
+  File "/Users/franciscoteixeirabarbosa/anaconda3/envs/streamlitapp/lib/python3.11/site-packages/datatrove/pipeline/writers/disk_base.py", line 173, in run
+    for document in data:
+                    └ <generator object BaseFilter.run at 0x122064d50>
+  File "/Users/franciscoteixeirabarbosa/anaconda3/envs/streamlitapp/lib/python3.11/site-packages/datatrove/pipeline/filters/base_filter.py", line 50, in run
+    filter_result, reason = get_filter_result(self.filter(doc))
+                            │                 │    │      └ Document(text="Read Candace's bio and previous columns\nJanuary 7, 2008\nWith Robot Soldiers,\nPeace Will Become Impossible\n...
+                            │                 │    └ <function LambdaFilter.filter at 0x122044720>
+                            │                 └ 🔻 - FILTER: 👤 Lambda
+                            └ <function get_filter_result at 0x120587f60>
+  File "/Users/franciscoteixeirabarbosa/anaconda3/envs/streamlitapp/lib/python3.11/site-packages/datatrove/pipeline/filters/lambda_filter.py", line 29, in filter
+    return self.filter_function(doc)
+           │    │               └ Document(text="Read Candace's bio and previous columns\nJanuary 7, 2008\nWith Robot Soldiers,\nPeace Will Become Impossible\n...
+           │    └ <function is_dentistry_related at 0x120587b00>
+           └ 🔻 - FILTER: 👤 Lambda
+
+  File "[32m/var/folders/cd/2c6x3jgj47j_fwl7231ts7m00000gn/T/ipykernel_96205/[0m[32m[1m1478983234.py[0m", line [33m33[0m, in [35mis_dentistry_related[0m
+
+[31m[1mNameError[0m:[1m name 'dentistry_keywords' is not defined[0m
